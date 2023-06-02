@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css_file/css_for_multiple_pages.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width:470px)"
+      href="css_file/phone.css"
+    />
+  </head>
+  <body>
+    <div class="container student_attendance">
+      <h1>Attendance System</h1>
+      <form action="#" method="post">
+        <!-- {% csrf_token %}-->
+        <label for="student-id">ID:</label>
+        <input type="text" name="student-id" id="student-id" />
+        <label for="class-date">Class Date:</label>
+        <input type="date" name="class-date" id="class-date" />
+        <label for="present">Present:</label>
+        <input type="checkbox" name="present" id="present" />
+        <button type="submit">Submit</button>
+      </form>
+      <div id="attendance_table">
+        <table>
+          <thead>
+            <tr>
+              <th>Student ID</th>
+              <th>Date</th>
+              <th>Present</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>159</td>
+              <td>2023-05-01</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td>002</td>
+              <td>2023-05-01</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td>001</td>
+              <td>2023-05-02</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td>002</td>
+              <td>2023-05-02</td>
+              <td>Yes</td>
+            </tr>
+           
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
